@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meguellati Moncef | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <a href="#home" class="logo">MONCEF<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">Identity</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#event-memories" class="nav-link">Memories</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-tag">Portfolio</div>
+        <h1><span>Moncef Meguellati</span></h1>
+        <div class="static-subtitle-container">
+            <span class="sub-pill">Photographer</span>
+            <span class="sub-divider">·</span>
+            <span class="sub-pill">Videographer</span>
+            <span class="sub-divider">·</span>
+            <span class="sub-pill">Motion Designer</span>
+        </div>
+
+        <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span class="typing-text">Actively seeking new opportunities_</span>
+        </div>
+        <div class="cta-group">
+            <a href="#portfolio" class="btn btn-primary">
+                View Showroom <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            <a href="assets/my_cv_english.pdf" download class="btn btn-outline">
+                <i class="fa-solid fa-file-pdf"></i> CV English
+            </a>
+            <a href="assets/my_cv_french.pdf" download class="btn btn-outline">
+                <i class="fa-solid fa-file-pdf"></i> CV French
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <h2>Identity</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="identity-photo-container">
+                    <div class="identity-photo-frame">
+                        <img src="assets/my pdp1.jpg" alt="Moncef Meguellati Portrait">
+                    </div>
+                </div>
+                <h3>Moncef Meguellati</h3>
+                <p>Visual Specialist</p>
+                <div class="experience-box">
+                    <h4>+4 YEARS</h4>
+                    <p>Of Experience</p>
+                </div>
+            </div>
+            
+            <div class="about-info">
+                <h3>About me</h3>
+                <p>Creative storyteller passionate about videography, photography, and motion design. I love turning ideas into dynamic visuals that capture energy, emotion, and movement. From cinematic edits to creative event coverage, I enjoy building experiences that leave an impact.</p>
+                <p>I’ve also worked on organizing events and managing creative productions in fast-paced environments. Always exploring new ways to create visuals that people don’t just watch, but feel.</p>
+                
+                <h3 class="software-title">Production Software</h3>
+                <div class="software-flex">
+                    <span class="filter-btn static-pill">After Effects</span>
+                    <span class="filter-btn static-pill">Premiere Pro</span>
+                    <span class="filter-btn static-pill">Lightroom</span>
+                    <span class="filter-btn static-pill">Illustrator</span>
+                    <span class="filter-btn static-pill">Blender</span>
+                    <span class="filter-btn static-pill">Davinci resolve</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="section-header">
+            <h2>Portfolio Showcase</h2>
+            <p>Explore specialized creative executions categorized dynamically by project tier.</p>
+        </div>
+
+        <div class="filter-container">
+            <ul class="main-filters">
+                <li><button class="filter-btn active" data-filter="photography">Photography</button></li>
+                <li><button class="filter-btn" data-filter="videography">Videography</button></li>
+                <li><button class="filter-btn" data-filter="motion">Motion Design</button></li>
+            </ul>
+
+            <ul class="sub-filters" id="photo-subs">
+                <li><button class="filter-btn active" data-subfilter="all">All Photography</button></li>
+            </ul>
+            <ul class="sub-filters hidden" id="video-subs">
+                <li><button class="filter-btn active" data-subfilter="all">All Videos</button></li>
+            </ul>
+            <ul class="sub-filters hidden" id="motion-subs">
+                <li><button class="filter-btn active" data-subfilter="all">All Motion Work</button></li>
+            </ul>
+        </div>
+
+        <!-- PORTFOLIO GRID CONTAINER -->
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-cat="photography" data-sub="Automotive & Motorsport" data-type="gallery" data-images='["assets/photography/automotive/22 copy.png","assets/photography/automotive/33 copy.png","assets/photography/automotive/Artboard 5 copy 3.png","assets/photography/automotive/DSC01585.jpg","assets/photography/automotive/DSC01896.jpg","assets/photography/automotive/DSC02001.jpg","assets/photography/automotive/DSC02102.jpg","assets/photography/automotive/DSC02292.jpg","assets/photography/automotive/DSC02374.jpg","assets/photography/automotive/DSC02387.jpg","assets/photography/automotive/DSC02727.jpg","assets/photography/automotive/DSC02735.jpg","assets/photography/automotive/DSC02959.jpg","assets/photography/automotive/DSC03842.jpg","assets/photography/automotive/SON00090.jpg","assets/photography/automotive/SON00213.jpg","assets/photography/automotive/SON00258.jpg","assets/photography/automotive/SON00425.jpg","assets/photography/automotive/SON00475.jpg"]' data-titles='["","","","","","","","","","","","","","","","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/photography/automotive/DSC02387.jpg" alt="Product Photography Gallery">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-images"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Photography / automotive</span>
+                    <h3 class="item-title">Automotive & Motorsport</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-cat="photography" data-sub="events" data-type="gallery" data-images='["assets/photography/events/1.jpg","assets/photography/events/2.jpg","assets/photography/events/3.jpg","assets/photography/events/4.jpg","assets/photography/events/5.jpg","assets/photography/events/6.jpg","assets/photography/events/7.jpg","assets/photography/events/8.jpg","assets/photography/events/9.jpg","assets/photography/events/10.jpg","assets/photography/events/11.jpg","assets/photography/events/12.jpg","assets/photography/events/13.jpg","assets/photography/events/14.jpg","assets/photography/events/15.jpg","assets/photography/events/16.jpg","assets/photography/events/17.jpg","assets/photography/events/18.jpg","assets/photography/events/19.jpg","assets/photography/events/20.jpg","assets/photography/events/21.jpg"]' data-titles='["","","","","","","","","","","","","","","","","","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/photography/events/4.jpg" alt="Event Photography Gallery">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-images"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Photography / Events</span>
+                    <h3 class="item-title">Events coverage Shoot</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-cat="photography" data-sub="Random" data-type="gallery" data-images='["assets/photography/random/1.jpg","assets/photography/random/2.jpg","assets/photography/random/3.jpg","assets/photography/random/4.jpg","assets/photography/random/5.jpg","assets/photography/random/6.jpg","assets/photography/random/7.jpg","assets/photography/random/8.jpg","assets/photography/random/9.jpg","assets/photography/random/10.jpg","assets/photography/random/11.jpg","assets/photography/random/12.jpg","assets/photography/random/13.jpg","assets/photography/random/14.jpg","assets/photography/random/15.jpg","assets/photography/random/16.jpg"]' data-titles='["","","","","","","","","","","","","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/photography/random/14.jpg" alt="Street and Nature Photography Gallery">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-images"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Photography / RANDOM</span>
+                    <h3 class="item-title">Street and nature</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item hide" data-cat="videography" data-sub="sport" data-type="video" data-images='["assets/videography/sports videos/1.mp4","assets/videography/sports videos/2.mp4","assets/videography/sports videos/3.mp4"]' data-titles='["","",""]'>
+                <div class="media-container">
+                    <img src="assets/photography/sport/8.png" alt="Athletic Speed Reel">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Videography / Sport</span>
+                    <h3 class="item-title">Athletic Speed Reel</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item hide" data-cat="videography" data-sub="Cinema" data-type="video" data-images='["assets/videography/cinematic and corporate/1.mp4","assets/videography/cinematic and corporate/2.mp4","assets/videography/cinematic and corporate/3.mp4","assets/videography/cinematic and corporate/4.mp4","assets/videography/cinematic and corporate/5.mp4","assets/videography/cinematic and corporate/6.mp4","assets/videography/cinematic and corporate/7.mp4"]' data-titles='["","","","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/photography/random/2.jpg" alt="Cinema Reel">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-video"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Videography / Cinematic</span>
+                    <h3 class="item-title">Cinematic and Corporate</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item hide" data-cat="motion" data-sub="3d" data-type="video" data-images='["assets/motion design/Socila shorts and loops/1.mp4","assets/motion design/Socila shorts and loops/2.mp4","assets/motion design/Socila shorts and loops/3.mp4","assets/motion design/Socila shorts and loops/4.mp4","assets/motion design/Socila shorts and loops/5.mp4"]' data-titles='["","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/motion design/Socila shorts and loops/shorts cover.png" alt="Shorts Showcase">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-cubes"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Motion Design / Shorts</span>
+                    <h3 class="item-title">Social Shorts & Loops</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item hide" data-cat="motion" data-sub="3d" data-type="video" data-images='["assets/motion design/explainer videos/1.mp4","assets/motion design/explainer videos/2.mp4","assets/motion design/explainer videos/3.mp4"]' data-titles='["","",""]'>
+                <div class="media-container">
+                    <img src="assets/motion design/explainer videos/Explainer video cover.png" alt="Explainer Videos">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-cubes"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Motion Design / Explainer videos</span>
+                    <h3 class="item-title">Explainer Videos</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+           
+            <div class="portfolio-item hide" data-cat="motion" data-sub="3d" data-type="video" data-images='["assets/motion design/logo animation/1.mp4","assets/motion design/logo animation/2.mp4","assets/motion design/logo animation/3.mp4","assets/motion design/logo animation/4.mp4","assets/motion design/logo animation/5.mp4"]' data-titles='["","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/motion design/logo animation/logo animation cover.png" alt="Logo Animations">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-cubes"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Motion Design / Logo Animation</span>
+                    <h3 class="item-title">Custom Logo Animation</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-cat="photography" data-sub="SPORT shooting" data-type="image" data-images='["assets/photography/sport/1.jpg","assets/photography/sport/2.png","assets/photography/sport/3.jpg","assets/photography/sport/4.jpg","assets/photography/sport/5.jpg","assets/photography/sport/6.jpg","assets/photography/sport/7.jpg","assets/photography/sport/8.png","assets/photography/sport/9.jpg","assets/photography/sport/10.jpg","assets/photography/sport/11.jpg","assets/photography/sport/12.jpg","assets/photography/sport/13.jpg","assets/photography/sport/14.jpg","assets/photography/sport/15.jpg","assets/photography/sport/16.jpg"]' data-titles='["","","","","","","","","","","","","","","",""]'>
+                <div class="media-container">
+                    <img src="assets/photography/sport/16.jpg" alt="Sports Photography">
+                    <div class="media-placeholder-icon"><i class="fa-solid fa-images"></i></div>
+                </div>
+                <div class="item-overlay">
+                    <span class="item-tag">Photography / SPORTS</span>
+                    <h3 class="item-title">Sport & Fitness</h3>
+                    <p class="item-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="section-header">
+            <h2>Reviews & Feedbacks</h2>
+            <p>What industry leaders, agencies, and long-term collaborators say about our unified asset delivery system.</p>
+        </div>
+        
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"Travail pro, j’ai toujours été satisfaite du rendu des vidéos, un montage clean, en plus d’être très à l’écoute lors des debriefs, always easy to work with ! 🙌"</p>
+                <div class="review-footer">
+                    <div class="author-info">
+                        <h4 class="author-name">KENZEY IZEM</h4>
+                        <p class="author-meta">Brand Manager - Spotlight DZ</p>
+                    </div>
+                    <div class="company-logo-badge" title="Spotlight"><i class="fa-solid fa-film"></i></div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"Communication was clear, deadlines were respected, and the final result exceeded expectations. Moncef handles complex projects with confidence and professionalism."</p>
+                <div class="review-footer">
+                    <div class="author-info">
+                        <h4 class="author-name">AHMED</h4>
+                        <p class="author-meta">CEO of ZAYEAGENCY</p>
+                    </div>
+                    <div class="company-logo-badge" title="Zaye Agency"><i class="fa-solid fa-cubes"></i></div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"He brings energy and precision to every project. His motion design and video edits are dynamic and well paced."</p>
+                <div class="review-footer">
+                    <div class="author-info">
+                        <h4 class="author-name">Ben Salah Zaitri</h4>
+                        <p class="author-meta">marketing specialist - UPLEAD Agency</p>
+                    </div>
+                    <div class="company-logo-badge" title="Uplead"><i class="fa-solid fa-clapperboard"></i></div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="rating-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="review-text">"Professional, creative, and highly reliable. his ability to showcase the finest details, genuine emotions, and key moments makes every event unforgettable."</p>
+                <div class="review-footer">
+                    <div class="author-info">
+                        <h4 class="author-name">AZIZ SAIDANI</h4>
+                        <p class="author-meta">CEO of ASSA EVENTS</p>
+                    </div>
+                    <div class="company-logo-badge" title="Assa Events"><i class="fa-solid fa-bolt"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event-memories">
+        <div class="section-header" style="text-align: center; margin-bottom: 2.5rem;">
+            <h2 style="font-family: 'Orbitron', sans-serif; color: #fff; text-transform: uppercase; letter-spacing: 2px;">Events Memories</h2>
+            <p style="color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto;">A collection of behind-the-scenes moments, live event coverage, and creative milestones.</p>
+        </div>
+        
+        <div class="memories-marquee-container">
+            <div class="memories-marquee-track">
+                <!-- Main Set -->
+                <div class="memory-slide">
+                    <img src="assets/event 1.png" alt="Event Memory 1">
+                    <div class="memory-caption">Kastudio project</div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 2.png" alt="Event Memory 2">
+                    <div class="memory-caption">Winning MGV competition - motion design category</div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 3.jpg" alt="Event Memory 3">
+                    <div class="memory-caption">Behind the scenes</div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 4.jpg" alt="Event Memory 4">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 5.jpg" alt="Event Memory 5">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 6.jpg" alt="Event Memory 6">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 7.jpg" alt="Event Memory 7">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 8.jpg" alt="Event Memory 8">
+                    <div class="memory-caption"></div>
+                </div>
+
+                <!-- Duplicated Set for Seamless Marquee Loop -->
+                <div class="memory-slide">
+                    <img src="assets/event 1.png" alt="Event Memory 1 Copy">
+                    <div class="memory-caption">Kastudio project</div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 2.png" alt="Event Memory 2 Copy">
+                    <div class="memory-caption">Winning MGV competition - motion design category</div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 3.jpg" alt="Event Memory 3 Copy">
+                    <div class="memory-caption">Behind the scenes</div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 4.jpg" alt="Event Memory 4 Copy">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 5.jpg" alt="Event Memory 5 Copy">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 6.jpg" alt="Event Memory 6 Copy">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 7.jpg" alt="Event Memory 7 Copy">
+                    <div class="memory-caption"></div>
+                </div>
+                <div class="memory-slide">
+                    <img src="assets/event 8.jpg" alt="Event Memory 8 Copy">
+                    <div class="memory-caption"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Ready to start a new shoot or production cycle? Drop a message below.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-method">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-text">
+                        <h4>Direct Mailbox</h4>
+                        <a href="mailto:moncefmeguellati4@gmail.com">moncefmeguellati4@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-text">
+                        <h4>Base Location</h4>
+                        <a href="#" style="pointer-events: none">Algiers, Algeria</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-text">
+                        <h4>Phone number</h4>
+                        <a href="#" style="pointer-events: none">+213 672035624</a>
+                        <a href="#" style="pointer-events: none">/ +213 784131559</a>
+                    </div>
+                </div>
+
+                <div class="social-row">
+                    <a href="https://www.instagram.com/moncef_meg/" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/meguellati-moncef-3b17ba269/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-card" style="display: flex; flex-direction: column; justify-content: center; border-color: rgba(152,252,0,0.15)">
+                <h3 style="margin-bottom: 0.8rem; font-family: var(--font-mono); color: var(--accent);">Availability Hub</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.2rem; font-size: 0.95rem;">Currently evaluating assignments for high-tier sports tracking, product layouts, and technical kinetic animation structures.</p>
+                <div style="padding: 0.8rem; background: rgba(102, 4, 252, 0.1); border-left: 3px solid var(--primary); border-radius: 4px; font-size: 0.85rem">
+                    <i class="fa-regular fa-clock" style="color:var(--accent); margin-right: 6px"></i> Turnaround window: Within 24-48 business hours.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MEGUELLATI MONCEF. All rights reserved.</p>
+    </footer>
+
+    <div class="lightbox" id="portfolio-lightbox">
+        <button class="lightbox-nav prev" id="lightbox-prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div id="lightbox-media-box"></div>
+            <div class="lightbox-caption" id="lightbox-caption-text"></div>
+            <div class="lightbox-counter" id="lightbox-counter-text"></div>
+        </div>
+        <button class="lightbox-nav next" id="lightbox-next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
